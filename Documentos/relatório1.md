@@ -1,9 +1,9 @@
 ## 1. Identificação
 - Universidade: Universidade Europeia  
 - Faculdade: IADE  
-- Elementos do grupo: Rodrigo Canto, Rodrigo Daibert, Marco Fonseca e Luís Quirin
-- Nome do projeto: COBUY  
-- Repositório GitHub: https://github.com/rodrigocanto05/COBUY.git  
+- Elementos do grupo: Rodrigo Canto, Rodrigo Daibert, Marco Fonseca e Daniel Paulo
+- Nome do projeto: 
+- Repositório GitHub: 
 
 ---
 
