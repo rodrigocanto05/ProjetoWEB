@@ -295,6 +295,9 @@ Vigilância Inteligente do Território e Riscos Ambientais
 
 **Projeto de Desenvolvimento Web**: É nesta cadeira que vamos desenvolver o projeto, iremos ter acompanhamento da professora e as apresentações.
 
+**Algoritmo e Estrutura de dados**: O nosso projeto enquadra-se na cadeira de Algoritmos e Estruturas de Dados porque aplica a organização e estruturação de dados provenientes de sensores, utilizando algoritmos para processar informação e gerar alertas. Além disso, recorre a estruturas de dados e ao paradigma de programação orientada a objetos, conforme abordado nos conteúdos da unidade curricular.
+
+
 ---
 
 ## 9 WBS (Work Breakdown Structure)
