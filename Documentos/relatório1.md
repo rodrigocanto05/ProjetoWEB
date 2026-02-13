@@ -214,8 +214,6 @@ O presente plano de trabalho organiza o desenvolvimento do sistema ao longo de 1
 
 ---
 
-# Conclusão
-
 Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do sistema, começando pela definição conceptual, passando pela implementação técnica e culminando na validação e apresentação final. A divisão equilibrada das fases garante tempo suficiente para desenvolvimento, testes e documentação, aumentando a qualidade e robustez do projeto.
 
 ---
