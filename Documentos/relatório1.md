@@ -293,6 +293,8 @@ Vigilância Inteligente do Território e Riscos Ambientais
 
 **Sistema de Informações Geograficos**: Utiliza dados georreferenciados provenientes de sensores distribuídos no território e por recorrer a mapas interativos para visualização e análise espacial. A plataforma aplica conceitos de georreferenciação, análise espacial e monitorização territorial em tempo real, apoiando a tomada de decisão com base em informação geográfica.
 
+**Projeto de Desenvolvimento Web**: É nesta cadeira que vamos desenvolver o projeto, iremos ter acompanhamento da professora e as apresentações.
+
 ---
 
 ## 9 WBS (Work Breakdown Structure)
