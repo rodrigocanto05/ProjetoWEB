@@ -3,7 +3,7 @@
 - Faculdade: IADE  
 - Elementos do grupo: Rodrigo Canto, Rodrigo Daibert, Marco Fonseca e Daniel Paulo
 - Nome do projeto: VITRA – Vigilância Inteligente do Território e Riscos Ambientais
-- Repositório GitHub: 
+- Repositório GitHub: https://github.com/rodrigocanto05/VITRA
   
 ---
 
