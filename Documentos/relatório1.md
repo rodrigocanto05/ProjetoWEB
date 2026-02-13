@@ -63,6 +63,169 @@ Entre os principais benefícios do projeto destacam-se a redução do tempo de r
 
 ---
 
+## 5. Plano de Trabalhos
+
+## Sistema Web de Monitorização e Alerta de Riscos Ambientais
+
+O presente plano de trabalho organiza o desenvolvimento do sistema ao longo de 13 semanas, permitindo uma evolução estruturada desde a análise inicial até à implementação final, testes e apresentação. A divisão por fases garante controlo de progresso, qualidade técnica e cumprimento de prazos.
+
+---
+
+## Semana 1 – Enquadramento e Definição do Projeto
+
+* Definição clara do problema e objetivos
+* Identificação dos tipos de risco a monitorizar (cheias, incêndios e radiação)
+* Pesquisa sobre sistemas semelhantes
+* Definição dos requisitos funcionais e não funcionais
+* Planeamento inicial das tarefas
+
+**Resultado:** Documento de requisitos aprovado.
+
+---
+
+## Semana 2 – Arquitetura do Sistema
+
+* Definição da arquitetura geral (sensores → servidor → base de dados → interface)
+* Escolha das tecnologias (frontend, backend, base de dados)
+* Definição do modelo de comunicação com sensores (ex.: HTTP ou MQTT)
+* Desenho do diagrama da arquitetura
+
+**Resultado:** Estrutura técnica definida.
+
+---
+
+## Semana 3 – Modelação da Base de Dados
+
+* Identificação das entidades principais:
+
+  * Sensores
+  * Leituras
+  * Incidentes
+  * Alertas
+  * Utilizadores
+* Criação do modelo relacional
+* Implementação inicial da base de dados
+
+**Resultado:** Base de dados estruturada e funcional.
+
+---
+
+## Semana 4 – Estrutura Inicial do Backend
+
+* Criação do servidor
+* Implementação dos primeiros endpoints da API
+* Ligação à base de dados
+* Testes iniciais de comunicação
+
+**Resultado:** Backend operacional.
+
+---
+
+## Semana 5 – Receção e Processamento de Dados
+
+* Desenvolvimento da funcionalidade de receção de leituras
+* Validação de dados recebidos
+* Implementação de regras de deteção de risco
+* Criação automática de incidentes
+
+**Resultado:** Sistema capaz de detetar eventos críticos.
+
+---
+
+## Semana 6 – Sistema de Alertas
+
+* Implementação de envio de alertas (email ou simulação)
+* Classificação de severidade (verde, amarelo, laranja, vermelho)
+* Sistema de controlo para evitar alertas repetidos
+* Histórico de notificações
+
+**Resultado:** Sistema de alertas funcional.
+
+---
+
+## Semana 7 – Desenvolvimento do Frontend (Base)
+
+* Estrutura da interface web
+* Implementação de autenticação simples
+* Criação do painel principal (dashboard)
+* Ligação frontend–backend
+
+**Resultado:** Interface básica funcional.
+
+---
+
+## Semana 8 – Mapa Interativo e Visualização
+
+* Integração de mapa interativo
+* Visualização de sensores por estado
+* Representação gráfica de incidentes ativos
+* Implementação de filtros por tipo de risco
+
+**Resultado:** Visualização geográfica do sistema.
+
+---
+
+## Semana 9 – Monitorização de Cheias e Radiação (Melhorias)
+
+* Ajuste de regras específicas para cheias
+* Implementação de análise de tendência (taxa de subida)
+* Ajuste de níveis de alerta para radiação
+* Testes com cenários simulados
+
+**Resultado:** Monitorização mais precisa e realista.
+
+---
+
+## Semana 10 – Módulo de Previsão de Incêndios
+
+* Implementação do cálculo simplificado de propagação
+* Integração de dados de vento (simulados)
+* Cálculo de tempo estimado até pontos críticos
+* Representação visual da área afetada
+
+**Resultado:** Sistema com previsão básica de propagação.
+
+---
+
+## Semana 11 – Testes e Otimização
+
+* Testes de carga com múltiplos sensores simulados
+* Correção de erros
+* Otimização de desempenho
+* Validação da estabilidade do sistema
+
+**Resultado:** Sistema estável e otimizado.
+
+---
+
+## Semana 12 – Documentação Técnica
+
+* Redação do relatório técnico
+* Inclusão de diagramas (arquitetura, base de dados, fluxo do sistema)
+* Explicação do modelo de previsão
+* Organização das evidências de testes
+
+**Resultado:** Relatório quase finalizado.
+
+---
+
+## Semana 13 – Preparação da Apresentação Final
+
+* Criação da apresentação (slides)
+* Preparação de demonstração prática
+* Simulação de cenário real (ex.: incêndio ou cheia)
+* Ensaios da apresentação
+
+**Resultado:** Projeto pronto para entrega e apresentação.
+
+---
+
+# Conclusão
+
+Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do sistema, começando pela definição conceptual, passando pela implementação técnica e culminando na validação e apresentação final. A divisão equilibrada das fases garante tempo suficiente para desenvolvimento, testes e documentação, aumentando a qualidade e robustez do projeto.
+
+---
+
 ## 5. Público-alvo
 
 - Autoridades municipais e câmaras municipais.
