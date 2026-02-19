@@ -1,4 +1,4 @@
-## 1. Identificação
+## 📋 1. Identificação
 - Universidade: Universidade Europeia  
 - Faculdade: IADE  
 - Elementos do grupo: Rodrigo Canto, Rodrigo Daibert, Marco Fonseca e Daniel Paulo
@@ -7,7 +7,7 @@
   
 ---
 
-# 2. Distribuição das principais tarefas
+## 👥 2. Distribuição das principais tarefas
 
 | **Tarefas Principais** | **Rodrigo Canto**| **Rodrigo Daibert** | **Marco Fonseca** | **Daniel Paulo** | **Total** |
 |----------------------|-------------------|----------------------|-------------------|------------------|-----------|
@@ -15,7 +15,7 @@
 
 ---
 
-## 3. Proposta inicial
+## 💡 3. Proposta inicial
 
 
 O presente projeto visa o desenvolvimento de um sistema web inteligente capaz de monitorizar, em tempo real, dados recolhidos por sensores instalados em zonas críticas. O objetivo é detetar situações de risco e emitir alertas automáticos às autoridades, contribuindo para a prevenção e mitigação de cheias, incêndios florestais e níveis anormais de radiação.
@@ -30,7 +30,7 @@ Este projeto pretende demonstrar como a integração de sensores, algoritmos e e
 
 ---
 
-## 4. Objetivos e probelmas a resolver
+## 🎯 4. Objetivos e probelmas a resolver
 
 ### 4.1. Objetivos
 
@@ -57,7 +57,7 @@ Este projeto pretende demonstrar como a integração de sensores, algoritmos e e
 
 ---
 
-## 5. Plano de Trabalhos
+## 📅 5. Plano de Trabalhos
 
 ## Sistema Web de Monitorização e Alerta de Riscos Ambientais
 
@@ -218,7 +218,7 @@ Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do
 
 ---
 
-## 5. Público-alvo
+## 👥 6. Público-alvo
 
 - Autoridades municipais e câmaras municipais.
 - Serviços municipais de proteção civil.
@@ -231,7 +231,7 @@ Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do
 
 ---
 
-## 6. Pesquisa de mercado
+## 🔍 7. Pesquisa de mercado
 
 ### IPMA
 | 🟢 Semelhanças | 🔴 Diferenças |
@@ -269,11 +269,17 @@ Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do
 
 ---
 
-## 7. Guiões de teste
+## 🧪 8. Guiões de teste
+| ID | Cenário de Teste |Procedimento de Execução | Resultado Esperado |
+|---|---|---|---|
+| 01 | Deteção de Cheia 🌊 | Inserir via base de dados uma subida de nível de água de 15cm em menos de 5 minutos | "O sistema deve calcular a taxa de variação, gerar um incidente de ""Risco Elevado"" e mudar a cor do sensor no mapa para vermelho." | 
+| 02 | Alerta de Incêndio 🔥 | Simular leitura combinada de Temperatura > 45°C e CO2 > 800ppm num sensor florestal | Cruzamento de dados bem-sucedido com a criação automática de um alerta e notificação visual no dashboard |
+| 03 | Segurança de Radiação ☢️ | Introduzir valor de radiação acima do limite de segurança definido (ex: > 0.5 µSv/h) | Disparo imediato de alerta crítico e registo do evento no histórico de incidentes para auditoria das autoridades |
+| 04 | Persistência de Dados | Simular queda de ligação do sensor e verificar o reenvio da leitura após restabelecimento | Garantir que não existem lacunas no gráfico de leituras históricas (timestamp correto) |
 
 ---
 
-## 8. Project Charter
+## 📜 9. Project Charter
 Project Charter: VITRA
 Vigilância Inteligente do Território e Riscos Ambientais
 
@@ -292,7 +298,7 @@ Vigilância Inteligente do Território e Riscos Ambientais
 
 ---
 
-## 9 WBS (Work Breakdown Structure)
+## 🏗️ 10. WBS (Work Breakdown Structure)
 1. Início: Project Charter e Definição de Requisitos - Documento de Especificação
 2. Arquitetura: Modelo da BD MySQL e Estrutura de Pastas - Esquema ER da Base de Dados
 3. Backend (PHP): Conexão DB e Script simulador de sensores - API de Dados (JSON)
@@ -302,9 +308,22 @@ Vigilância Inteligente do Território e Riscos Ambientais
 
 ---
 
-## 10. Conclusão
+## 🏁 11. Conclusão
+**O projeto VITRA** –> Vigilância Inteligente do Território e Riscos Ambientais valida a eficácia da integração entre sensores IoT e algoritmos inteligentes na mitigação de catástrofes naturais. Através da monitorização contínua e do processamento de dados em tempo real, o sistema converte métricas brutas em conhecimento estratégico para a Proteção Civil e autoridades locais.
+
+**Impacto Principal:** A plataforma elimina a fragmentação de sistemas ao unificar a gestão de riscos distintos — cheias, incêndios e radiação — num interface único, permitindo uma resposta operacional significativamente mais rápida e coordenada.
+
+**Em suma:** O VITRA afirma-se como uma ferramenta essencial para a resiliência do território. O sucesso deste protótipo prova que a antecipação baseada em dados não é apenas uma vantagem tecnológica, mas a estratégia fundamental para garantir a segurança pública no futuro.
 
 ---
 
-## 11. Bibliografia
+## 📚 12. Bibliografia
+**IPMA** (Instituto Português do Mar e da Atmosfera) — Padrões de alerta e escalas de severidade meteorológica.
 
+**USGS** (United States Geological Survey) — Modelos de monitorização de caudais e níveis hídricos.
+
+**NASA FIRMS** — Sistemas de deteção de focos de incêndio via satélite e sensores terrestres.
+
+**EURDEP** (European Radiological Data Exchange Platform) — Normas de monitorização e partilha de dados radiológicos.
+
+**Documentação Técnica** — Referências de implementação em PHP, MySQL e integração de mapas com Leaflet.js.
