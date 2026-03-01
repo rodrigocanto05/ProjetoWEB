@@ -10,7 +10,7 @@ No Project Charter, colaborei nas secções relacionadas com o Projeto de Desenv
 
 Por último, fui responsável pela elaboração do PowerPoint de apresentação, sintetizando os principais conteúdos do relatório e organizando-os de forma lógica e visual. Este trabalho contribuiu para uma comunicação clara da proposta do projeto, evidenciando o problema identificado, a solução apresentada e a estrutura técnica planeada.
 
-#Avaliação Crítica Pessoal
+# Avaliação Crítica Pessoal
 
 De um modo geral, considero que o trabalho realizado correspondeu aos objetivos definidos para as minhas responsabilidades no projeto. A elaboração da proposta inicial e do plano de trabalho ajudou a criar uma base sólida para o desenvolvimento do NextBid, permitindo que a equipa tivesse uma orientação clara desde o início.
 
