@@ -257,7 +257,36 @@ Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do
 
 ---
 
-## 10. Project Charter
+## 10. User Journey
+
+### 10.1 Cenário Principal – Participação num Leilão
+
+| Etapa | Ação do Utilizador | Resposta do Sistema | Experiência do Utilizador |
+|------|--------------------|---------------------|---------------------------|
+| 1 | Acede ao website NextBid | Página inicial é apresentada | Curiosidade sobre os leilões disponíveis |
+| 2 | Cria conta ou faz login | Sistema autentica o utilizador | Acesso à plataforma |
+| 3 | Explora a lista de leilões ativos | Sistema mostra produtos com preço atual e tempo restante | Interesse em encontrar um bom negócio |
+| 4 | Seleciona um produto | Página do leilão mostra detalhes, histórico de licitações e temporizador | Avalia se deve licitar |
+| 5 | Faz uma licitação | Sistema valida se o valor é superior ao atual | Expectativa de ganhar o leilão |
+| 6 | Outros utilizadores licitam | Sistema atualiza os lances em tempo real | Competição entre utilizadores |
+| 7 | O temporizador termina | Sistema fecha o leilão automaticamente | Suspense até ao resultado |
+| 8 | Utilizador vence o leilão | Sistema envia notificação ao vencedor | Satisfação por ganhar |
+| 9 | Utilizador visualiza localização do produto | Sistema mostra o produto no mapa | Preparação para receber ou recolher o produto |
+
+---
+
+### 10.2 Cenário Alternativo – Caça ao Tesouro
+
+| Etapa | Ação do Utilizador | Resposta do Sistema | Experiência |
+|------|--------------------|---------------------|-------------|
+| 1 | Utilizador abre o mapa | Sistema mostra itens escondidos na região | Curiosidade |
+| 2 | Seleciona um prémio disponível | Sistema mostra localização aproximada | Motivação para participar |
+| 3 | Utilizador desloca-se fisicamente até ao local | Sistema verifica geolocalização | Desafio |
+| 4 | Utilizador chega ao local correto | Sistema valida posição e atribui prémio | Recompensa |
+
+---
+
+## 11. Project Charter
 Project Charter: NextBid
 
 
@@ -280,7 +309,7 @@ Análise de Outliers: Identificar licitações fraudulentas (bots) através de d
 
 ---
 
-## 11. WBS (Work Breakdown Structure)
+## 12. WBS (Work Breakdown Structure)
 # Estrutura do Projeto
 
 ## 1. Gestão do Projeto
@@ -315,13 +344,13 @@ Análise de Outliers: Identificar licitações fraudulentas (bots) através de d
 
 ---
 
-## 12. Conclusão
+## 13. Conclusão
 
 O projeto **NextBid** propõe o desenvolvimento de uma plataforma web de leilões online que combina mecanismos tradicionais de licitação com recursos de gamificação e geolocalização. Isso cria uma experiência interativa, competitiva e centrada no usuário. A plataforma pretende se destacar das soluções existentes no mercado ao integrar algoritmos de licitação em tempo real, sistemas de autenticação segura, mapas interativos e jogos como a caça ao tesouro. A arquitetura definida, que utiliza PHP, um banco de dados relacional e dados em formato JSON, garante uma estrutura modular e escalável adequada ao contexto acadêmico do projeto. A divisão do desenvolvimento em fases semanais permite uma evolução gradual e controlada. Isso assegura que cada componente, desde a gestão de usuários até a integração do SIG com Leaflet.js, seja implementado, testado e otimizado de forma organizada. Do ponto de vista acadêmico, o projeto está diretamente relacionado às unidades curriculares de Programação Web, Algoritmos e Estruturas de Dados, Sistemas de Informação Geográfica, Estatística e Interfaces e Usabilidade. Ele aplica conceitos teóricos em um cenário prático e comercial. Essa integração de diferentes áreas demonstra a capacidade de criar e desenvolver uma solução tecnológica completa, funcional e que atende aos objetivos do curso.
 
 ---
 
-## 13. Bibliografia
+## 14. Bibliografia
 
 eBay. (n.d.). *eBay: Buy & Sell Electronics, Cars, Fashion, Collectibles & More*. https://www.ebay.com
 
