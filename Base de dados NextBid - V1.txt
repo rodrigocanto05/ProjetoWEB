@@ -1,0 +1,91 @@
+Base de dados NextBib - V1
+
+
+
+# 1. CATEGORIAS 
+create table categories (
+    cat_id      int not null auto_increment,
+    cat_name    varchar(80) not null,
+    primary key (cat_id)
+);
+
+# 2. UTILIZADORES 
+create table users (
+    usr_id         int not null auto_increment,
+    usr_gender     char(1) not null,
+    usr_age        int not null,
+    usr_name       varchar(80) not null,
+    usr_email      varchar(120) not null,
+    usr_password   varchar(200) not null,
+    usr_photo      varchar(255),
+    usr_bio        text,
+    usr_xp         int default 0,                     # Acresce consoante a gamificação
+    usr_created_at datetime not null default current_timestamp,
+    primary key (usr_id),
+    unique key uq_users_email (usr_email)
+);
+
+# 3. PRODUTOS 
+create table products (
+    prd_id           int not null auto_increment,
+    prd_name         varchar(120) not null,
+    prd_description  text not null,
+    cat_id           int not null,                       # FK para colocar as categorias
+    prd_condition    enum('new', 'used') not null,
+    prd_start_price  decimal(10,2) not null,
+    prd_location     varchar(120),
+    prd_latitude     decimal(10,7),
+    prd_longitude    decimal(10,7),
+    prd_status       enum('active','sold','expired') default 'active',
+    prd_ends_at      datetime not null,                  # Fim do leilão
+    prd_created_at   datetime not null default current_timestamp, 
+    usr_id           int not null,                       # Pessoa que está a vender o artigo
+
+    primary key (prd_id),
+    constraint fk_products_category foreign key (cat_id) references categories(cat_id),
+    constraint fk_products_user foreign key (usr_id) references users(usr_id)
+);
+
+# 4. GALERIA 
+create table product_images (
+    img_id      int not null auto_increment,
+    img_path    varchar(255) not null,
+    prd_id      int not null,
+    primary key (img_id),
+    constraint fk_images_product foreign key (prd_id) references products(prd_id)
+);
+
+# 5. LICITAÇÕES 
+create table bids (
+    bid_id          int not null auto_increment, 
+    bid_amount      decimal(10,2) not null, # Dinheiro Licitado
+    bid_created_at  datetime not null default current_timestamp,
+    usr_id          int not null,
+    prd_id          int not null,
+    primary key (bid_id),
+    constraint fk_bid_user foreign key (usr_id) references users(usr_id), # FK para saber a pessoa que licitou
+    constraint fk_bid_product foreign key (prd_id) references products(prd_id)
+);
+
+# 6. GAMIFICAÇÃO 
+create table gamification (
+    gme_id           int not null auto_increment,
+    gme_name         varchar(120) not null,
+    gme_description  text,
+    gme_xp_reward    int not null,                       # Recompensa em XP
+    gme_latitude     decimal(10,7) not null,
+    gme_longitude    decimal(10,7) not null,
+    gme_radius       int default 30,
+    gme_status       enum('active','expired') default 'active',
+    primary key (gme_id)
+);
+
+create table gamification_claims (
+    gcl_id           int not null auto_increment,
+    gme_id           int not null,
+    usr_id           int not null,
+    gcl_claimed_at   datetime not null default current_timestamp,
+    primary key (gcl_id),
+    constraint fk_claim_gamification foreign key (gme_id) references gamification(gme_id),
+    constraint fk_claim_user foreign key (usr_id) references users(usr_id)
+);
